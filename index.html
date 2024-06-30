@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1> ASSURANCE LEGAL</h1>
+        <div class="progress-bar-wrapper">
+            <button class="nav-btn" onclick="prevPage()">Previous</button>
+            <div class="progress-bar">
+                <div class="progress-bar-inner"></div>
+            </div>
+            <button class="nav-btn" onclick="nextPage()">Next</button>
+        </div>
+        <div id="form-wrapper">
+            <!-- Page 1 -->
+            <div class="form-page" id="page-1">
+                <h2>WHAT ARE YOUR ESTATE PLANNING GOALS?</h2>
+                <p>Select all that apply.</p>
+                <div class="options">
+                    <button class="option">Avoid Probate</button>
+                    <button class="option">Protect Disabled Adult Child</button>
+                    <button class="option">Establish Pet Fund</button>
+                    <button class="option">Disinherit Spouse</button>
+                    <button class="option">Appoint Guardians for Minor Children</button>
+                    <button class="option">Make Charitable Donations</button>
+                    <button class="option">Minimize Estate Taxes</button>
+                    <button class="option">Asset Protection for Beneficiaries</button>
+                </div>
+                <button class="nav-btn" onclick="nextPage()">Next</button>
+            </div>
+            
+            <!-- Page 2 -->
+            <div class="form-page" id="page-2" style="display:none;">
+                <h2>About You</h2>
+                <form id="about-you-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                    <input type="text" id="name" name="name" value="First Name" required>
+                    </div>
+                    <div class="form-group">
+                    <input type="text" id="name" name="name" value="Middle Name" required>
+                    </div>
+                    <div class="form-group">
+                    <input type="text" id="name" name="name" value="Last Name" required>
+                        </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                    <input type="email" id="email" name="email" value="Email" required>
+                    </div>
+                    <div class="form-group">
+                        
+                    <input type="number" id="age" name="age"  value=" age" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="jobtitle" name="jobtitle"  value="jobtitle" required>
+                        </div>
+                        </div>
+
+                        <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="city" name="city" value="City" required>
+                        </div>
+                    <div class="form-group">
+
+                            <input type="tel" id="landlineno" name="landlineno" value="landlineno" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="zipcode" name="zipcode" value="zipcode" required>
+                    </div>
+                    </div>
+                
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+
+                            
+                            <input type="text" id="streetaddress" name="streetaddress" value="street address" required>
+                            </div>
+                
+                    <div class="form-group">
+                    <input type="text" id="state" name="state"  value="state">
+                    </div>
+                    <div class="form-group">
+                    <input type="tel" id="cellphone" name="cellphone"  value="cellphone">
+                    </div>
+                    
+                    </div>
+
+
+
+                    
+                </form>
+                <button class="nav-btn" onclick="nextPage()">Next</button>
+            </div>
+            <!-- Page 3 -->
+            <div class="form-page" id="page-3" style="display:none;">
+                <h2>YOUR MARITAL STATUS</h2>
+                <p> Start by sharing your marital status.</p>
+                <form id="marital-status-form">
+                    <div class="radio-group">
+                        <label class="custom-radio">
+                            <input type="radio" name="marital_status" value="Married" required>
+                            <span class="checkmark">Married</span>
+                        </label>
+                        <label class="custom-radio">
+                            <input type="radio" name="marital_status" value="Single">
+                            <span class="checkmark">Single</span>
+                        </label>
+                        <label class="custom-radio">
+                            <input type="radio" name="marital_status" value="Divorced">
+                            <span class="checkmark">Divorced</span>
+                        </label>
+                        <label class="custom-radio">
+                            <input type="radio" name="marital_status" value="Widowed">
+                            <span class="checkmark">Widowed</span>
+                        </label>
+                    </div>
+                    </form>
+                    <button class="nav-btn" onclick="nextPage()">Next</button>
+                    
+            </div>
+            <!-- Page 4 -->
+            <div class="form-page" id="page-4" style="display:none;">
+                <h2>CHILDERN</h2>
+                <p> select the number born or adopted by you</p>
+                <form id="dependents-form">
+                    <div class="radio-group">
+                        <label class="custom-radio">
+                            <input type="radio" name="dependents" value="None" required>
+                            <span class="checkmark">None</span>
+                        </label>
+                        <label class="custom-radio">
+                            <input type="radio" name="dependents" value="One">
+                            <span class="checkmark">One</span>
+                        </label>
+                        <label class="custom-radio">
+                            <input type="radio" name="dependents" value="Two">
+                            <span class="checkmark">Two</span>
+                        </label>
+                        <label class="custom-radio">
+                            <input type="radio" name="dependents" value="More than two">
+                            <span class="checkmark">More than two</span>
+                        </label>
+                    </div>
+
+                    <div class="button-container">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    <script src="script.js"></script>
+
+            
+</body>
+</html>
